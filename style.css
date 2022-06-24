@@ -1,0 +1,182 @@
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Overpass:wght@700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+#image {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(124, 135, 152, .1);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#image img{
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 40px;
+    width: 450px;
+}
+
+#bouton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choix {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(124, 135, 152, .1);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+#validation {
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    /*color:hsl(0, 0%, 100%) ;*/
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    /*text-align:justify;*/
+    padding-right: 10px;
+
+}
+
+h1 {
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.active {
+    background-color: hsl(216, 12%, 54%);
+}
+
+.menter {
+    background-color: orange;
+}
+
+.mleave {
+    background-color: rgba(124, 135, 152, .1);
+}
+
+.bactive {
+    background-color: white !important;
+    color: orange !important;
+}
+
+.nbactive {
+    background-color: orange !important;
+    color: white !important;
+}
+.cache{
+	display: none !important;
+}
+
+/*************************************min screen 768px**************************/
+@media screen and (min-width: 768px){
+
+}
+
+
+/**********************media query*********************************/
+
+@media screen and (max-width: 375px){
+
+    #image {
+        width: 1.4rem;
+        height: 1.4rem;
+
+    }
+
+
+    #image img{
+        width: 14px;
+        height: 14px;
+    }
+
+    #principal {
+        padding: 20px;
+        width: 300px;
+        margin: 10px;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+
+.choix {%;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#validation {
+   
+    font-size: 1rem;
+    padding: 7px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  
+}
+
+}
